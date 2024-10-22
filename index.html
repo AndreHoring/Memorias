@@ -1,45 +1,86 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria de Fotos</title>
     <link rel="stylesheet" href="style.css">
-    <title>Álbum de Fotos</title>
 </head>
 <body>
+    <!-- Cabeçalho -->
     <header>
-        <h1>Meu Álbum e Fotos</h1>
-    <header>
-    <main>
-       <section class="gallery">
-           <div class="photo">
-               <img src="foto1.jpg" alt="Descrição da foto 1">
-               <p>História da Foto 1.</p>
-           </div>
-           <div class="photo">
-               <img src="foto2.jpg" alt="Descrição da foto 2">
-               <p>Hitória da foto 2.</p>
-           </div><div class="photo">
-               <img src="foto5.jpg" alt="Descrição da foto 5">
-               <p>Hitória da foto 5.</p>
-           </div>
-           <div class="photo">
-               <img src="foto3.jpg" alt="Descrição da foto 3">
-               <p>Hitória da foto 3.</p>
-           </div>
-           <div class="photo">
-               <img src="foto4.jpg" alt="Descrição da foto 4">
-               <p>Hitória da foto 4.</p>
-           </div>
-           <div class="photo">
-               <img src="foto5.jpg" alt="Descrição da foto 5">
-               <p>Hitória da foto 5.</p>
-           </div>
-           <div class="photo">
-               <img src="foto6.jpg" alt="Descrição da foto 6">
-               <p>Hitória da foto 6.</p>
-           </div>
-       </section>
-    </main>
+        <h1>MINHAS MEMÓRIAS DA ROBÓTICA</h1>
+        <nav>
+            <button onclick="scrollToSection('fotos')">Fotos</button>
+            <button onclick="scrollToSection('conclusao')">Conclusão</button>
+        </nav>
+    </header>
+
+    <!-- Seção de fotos -->
+    <section id="fotos" class="gallery-section">
+        <div class="gallery">
+            <div class="photo-card">
+                <img src="Site.Alex.0.png" alt="Foto 1">
+                <h2>Primeira competição de Robótica que participo, onde ficamos em 6°Lugar e ganhamos vaga para o Nacional</h2>
+                <p>Data: 26/11/2022</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Alex.2.jpg" alt="Foto 2">
+                <h2>Primeiro nacional que participo, onde viajamos para Brasília-DF e competimos no estádio Manné Garrincha</h2>
+                <p>Data: 16/03/2023</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Alex.4.jpg" alt="Foto 3">
+                <h2>Primeiro estadual de OBR que competi, onde ficamos em 2°Lugar e ganhamos vaga para o Nacional</h2>
+                <p>Data: 29/08/2023</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Alex.3.jpg" alt="Foto 4">
+                <h2>Primeiro Nacional de OBR que participei, onde viajamos para Salvador-BA e ganhamos prêmio de inovação</h2>
+                <p>Data: 12/10/2023</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Alex.5.jpg" alt="Foto 5">
+                <h2>Primeiro Nacional de FRC que participo, onde fui mentor de uma equipe de FLL junto e competimos em Brasília-DF</h2>
+                <p>Data: 24/02/2024</p>
+            </div>
+            <div class="photo-card">
+                <img src="Site.Alex.6.jpg" alt="Foto 6">
+                <h2>Segunda competição quevou como mentor de uma equipe de FLL a Manna Doctors Machines e ficamos em 2°Lugar</h2>
+                <p>Data: 11/10/2024</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Conclusão -->
+    <section id="conclusao" class="conclusion-section">
+        <div class="thanks-box">
+            <h2>Agradecimento</h2>
+            <p>
+                Bom esses últimos anos que participei na robótica foram incríveis,
+                aprendi diversas coisas, vivencie experiências super emocionantes,
+                engraçadas, divertidas e de muito aprendizado.Entrei em 2022 na
+                equipe Doctors Machines, daí em 2023 fui para o nacional no começo
+                do ano em Brasília-DF, logo após o nacional, entrei em uma equipe 
+                de OBR onde ficamos em 2° Lugar e ganhanos vaga para o Nacional em 
+                Salvador-BA onde ganhamos prêmio de Inovação. Após a OBR entrei em 
+                uma equipe de FRC a Roosters, onde estou competindo até hoje e
+                inclusive sou mentor da equipe de FLL Doctors Machines. Sou muito
+                grato por todas as memórias, experiências, viagens e conhecimento
+                que aprendi durante esses anos.
+            </p>
+        </div>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; Colégio Estadual Padre Cláudio Morelli - Alex Victor dos Santos Horing - N°03 - 3°E</p>
+    </footer>
+
+    <script>
+        function scrollToSection(id) {
+            document.getElementById(id).scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
 </body>
 </html>
