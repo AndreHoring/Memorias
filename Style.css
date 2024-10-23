@@ -58,14 +58,16 @@ nav button:hover {
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     margin: 10px;
-    width: 300px;
+    width: 300px; /* Largura padronizada */
     padding: 15px;
+    overflow: hidden; /* Para garantir que as bordas não sejam cortadas */
 }
 
 .photo-card img {
     width: 100%;
-    height: auto;
-    border-radius: 8px;
+    height: 200px; /* Altura padronizada */
+    object-fit: cover; /* Mantém a proporção da imagem */
+    border-radius: 5px; /* Borda da imagem */
 }
 
 .photo-card h2 {
@@ -90,30 +92,3 @@ nav button:hover {
     border: 1px solid #add8e6; /* Azul claro */
     border-radius: 8px;
     display: inline-block;
-    padding: 20px;
-    width: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.thanks-box h2 {
-    color: #1e90ff; /* Azul escuro */
-    margin-top: 0;
-}
-
-.thanks-box p {
-    font-size: 1.1em;
-    color: #555; /* Cinza escuro */
-}
-
-/* Rodapé */
-footer {
-    background-color: #1e90ff; /* Azul escuro */
-    color: white;
-    text-align: center;
-    padding: 10px;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9em;
-}
